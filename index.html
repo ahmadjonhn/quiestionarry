@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Опросник" />
+
+  <title>Опросник</title>
+
+  <!-- Fav Icon -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- All CSS files -->
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <h1 id="title">Опросник «IPSS» - международная система суммарной оценки
+        симптомов болезней предстательной железы в баллах</h1>
+      <p id="description"><b>Цель применения: </b> получение субъективной информации о выраженности симптомов
+        нижних мочевых путей и их влияния на качество жизни анкетируемых мужчин. <br />
+        <b>Инструкция по заполнению:</b> дайте ответ на каждый из 7 вопросов, отметив нужный
+        вариант в клеточках по вертикали любым знаком (крестик, галочка, точка). При ответе на 8
+        вопрос оцените тяжесть Ваших симптомов от 0 до 6 баллов (так же отметив соответствующий
+        Вашему случаю вариант любым знаком).
+      </p>
+      <form id="messageForm" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">
+        <div class="input-box">
+          <label for="name" class="title-label" id="name-label">ФИО</label>
+          <input type="text" id="name_id" class="input-text" placeholder="Введите ваше имя" required>
+        </div>
+        <div class="input-box">
+         Телефон
+          <input type="phone" id="phone_id" class="input-text" placeholder="Введите ваш номер телефона" required>
+        </div>
+        <div class="input-box">
+          <label for="number" class="title-label" id="number-label">Возраст</label>
+          <input type="number" id="number_id" class="input-text" min="0" max="200" placeholder="Введите ваш возраст">
+        </div>
+
+        <h2>1. Как часто в течение
+          последнего месяца у Вас было
+          ощущение неполного
+          опорожнения мочевого пузыря
+          после мочеиспускания?</h2>
+        <div class="input-box" id="checkbox-section">
+          <label class="input-checkbox">
+            <input type="radio" id="first" value="0">
+            Никогда
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="first" value="1">
+            Реже, чем
+            1 раз в
+            неделю
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="first" value="2">
+            Реже, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="first" value="3">
+            Примерно в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="first" value="4">
+            Чаще, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="first" value="5">
+            Почти всегда
+          </label>
+
+        </div>
+
+        <h2>2. Как часто в течение
+          последнего месяца у Вас была
+          потребность мочиться чаще, чем
+          через 2 часа после последнего
+          мочеиспускания?</h2>
+        <div class="input-box" id="checkbox-section">
+          <label class="input-checkbox">
+            <input type="radio" name="second" value="0">
+            Никогда
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="second" value="1">
+            Реже, чем
+            1 раз в
+            неделю
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="second" value="2">
+            Реже, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="second" value="3">
+            Примерно в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="second" value="4">
+            Чаще, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="second" value="5">
+            Почти всегда
+          </label>
+
+        </div>
+
+        <h2>3. Как часто в течение
+          последнего месяца у Вас имелось
+          прерывистое мочеиспускание?</h2>
+        <div class="input-box" id="checkbox-section">
+          <label class="input-checkbox">
+            <input type="radio" name="third" value="0">
+            Никогда
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="third" value="1">
+            Реже, чем
+            1 раз в
+            неделю
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="third" value="2">
+            Реже, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="third" value="3">
+            Примерно в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="third" value="4">
+            Чаще, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="third" value="5">
+            Почти всегда
+          </label>
+
+        </div>
+
+        <h2>4. Как часто в течение
+          последнего месяца Вам было
+          трудно временно воздержаться от
+          мочеиспускания?</h2>
+        <div class="input-box" id="checkbox-section">
+          <label class="input-checkbox">
+            <input type="radio" name="fourth" value="0">
+            Никогда
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="fourth" value="1">
+            Реже, чем
+            1 раз в
+            неделю
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="fourth" value="2">
+            Реже, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="fourth" value="3">
+            Примерно в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="fourth" value="4">
+            Чаще, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="fourth" value="5">
+            Почти всегда
+          </label>
+
+        </div>
+
+        <h2>5. Как часто в течение
+          последнего месяца у Вас была
+          слабая струя мочи?</h2>
+        <div class="input-box" id="checkbox-section">
+          <label class="input-checkbox">
+            <input type="radio" name="fifth" value="0">
+            Никогда
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="fifth" value="1">
+            Реже, чем
+            1 раз в
+            неделю
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="fifth" value="2">
+            Реже, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="fifth" value="3">
+            Примерно в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="fifth" value="4">
+            Чаще, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="fifth" value="5">
+            Почти всегда
+          </label>
+
+        </div>
+
+        <h2>6. Как часто в течение
+          последнего месяца Вам
+          приходилось натуживаться, чтобы
+          начать мочеиспускание?</h2>
+        <div class="input-box" id="checkbox-section">
+          <label class="input-checkbox">
+            <input type="radio" name="sixth" value="0">
+            Никогда
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="sixth" value="1">
+            Реже, чем
+            1 раз в
+            неделю
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="sixth" value="2">
+            Реже, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="sixth" value="3">
+            Примерно в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="sixth" value="4">
+            Чаще, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="sixth" value="5">
+            Почти всегда
+          </label>
+
+        </div>
+
+        <h2>7. Как часто в течение
+          последнего месяца Вам
+          приходилось вставать ночью с
+          постели, чтобы помочиться?</h2>
+        <div class="input-box" id="checkbox-section">
+          <label class="input-checkbox">
+            <input type="radio" name="seventh" value="0">
+            Никогда
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="seventh" value="1">
+            Реже, чем
+            1 раз в
+            неделю
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="seventh" value="2">
+            Реже, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="seventh" value="3">
+            Примерно в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="seventh" value="4">
+            Чаще, чем в
+            половине
+            случаев
+
+          </label>
+          <label class="input-checkbox">
+            <input type="radio" name="seventh" value="5">
+            Почти всегда
+          </label>
+
+        </div>
+       
+        <input type="submit" id="submit" value="Рассчитать" class="submit-button">
+        <div id="result"></div>
+      </form>
+    </div>
+  </section>
+</body>
+
+
+<script>
+  const chat_id = '-649128335', botID = 'bot5928968754:AAEB4hqPjlt4SB5z6o8vIEsWOqMhoQmiLrI';
+  const telegramURL = `https://api.telegram.org/${botID}/sendMessage`;
+  document.querySelector('#messageForm').addEventListener("submit", async e => { // When the user submits the form
+      e.preventDefault(); // Don't submit
+      document.getElementById("result").innerHTML = "";
+         var first = $("input[type=radio][name=first]").filter(":checked")[0];
+         var second = $("input[type=radio][name=second]").filter(":checked")[0];
+         var third = $("input[type=radio][name=third]").filter(":checked")[0];
+         var fourth = $("input[type=radio][name=fourth]").filter(":checked")[0];
+         var fifth = $("input[type=radio][name=fifth]").filter(":checked")[0];
+         var sixth = $("input[type=radio][name=sixth]").filter(":checked")[0];
+         var seventh = $("input[type=radio][name=seventh]").filter(":checked")[0];
+
+      var Sum = parseInt(first.value) + parseInt(second.value) +parseInt(third.value) +parseInt(fourth.value) +parseInt(fifth.value) +parseInt(sixth.value) + parseInt(seventh.value) 
+      var phone
+      var name
+      var age
+      element = document.getElementById('phone_id');
+      if (element != null) {
+            phone = element.value;
+      }
+        else {
+            phone = null;
+      }
+
+      name_el = document.getElementById('name_id');
+      if (name_el != null) {
+            name = name_el.value;
+      }
+        else {
+            name = null;
+      }
+
+      age_element = document.getElementById('number_id');
+      if (age_element != null) {
+            age = age_element.value;
+      }
+        else {
+            age = null;
+      }
+
+      var text
+
+      if(Sum >= 0 && Sum <= 7){
+        document.getElementById("result").innerHTML += "Диагноз: (Легкая симптоматика) – пациенту показано дальнейшее наблюдение, возможно назначение симптоматической терапии";
+        text = "ФИО: " + name + " \n" + "Телефон: " + phone+ " \n" + "Возраст: "  + age + " \n" + "Диагноз: " + "(Легкая симптоматика) – пациенту показано дальнейшее наблюдение, возможно назначение симптоматической терапии"
+      }else if(Sum >= 8 && Sum <= 19){
+        document.getElementById("result").innerHTML += "Диагноз: (Умеренная степень тяжести) – пациенту показано дообследование с целью подбора препаратов для консервативного лечения";
+        text =  "ФИО: " + name + " \n" + "Телефон: " + phone+ " \n" + "Возраст: "  + age +  " \n" +  "Диагноз: " + "(Умеренная степень тяжести) – пациенту показано дообследование с целью подбора препаратов для консервативного лечения"
+      }else{
+        document.getElementById("result").innerHTML += "Диагноз: (Тяжелая степень нарушений) – пациенту показано комплексное урологическое обследование, рекомендуется оперативное лечение";
+        text =  "ФИО: " + name + " \n" + "Телефон: " + phone+ " \n" + "Возраст: "  + age +  " \n" + "Диагноз: " +  "(Тяжелая степень нарушений) – пациенту показано комплексное урологическое обследование, рекомендуется оперативное лечение"
+      }
+
+    
+
+      const sendMessage = await fetch(telegramURL, { // Send the request to the telegram API
+          method: 'POST',
+          headers: {"Content-Type": "application/json"}, // This is required when sending a JSON body.
+          body: JSON.stringify({chat_id, text}), // The body must be a string, not an object
+      });
+
+  });
+</script>
+</html>
+
+
+
+
